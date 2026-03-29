@@ -1,4 +1,4 @@
-🧠 Quantum-AI-JR
+🧠 Quantum AI | Inteligencia Artificial Cuántica | Квантовый ИИ | 量子人工智能
 
 🌍 Idiomas disponibles / Available languages:
 
