@@ -1,7 +1,8 @@
 import json
 import os
 
-MEMORY_FILE = "memory.json"
+# 🔥 Memoria en Google Drive (permanente)
+MEMORY_FILE = "/content/drive/MyDrive/memory_jr.json"
 
 def load_memory():
     if os.path.exists(MEMORY_FILE):
