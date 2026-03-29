@@ -1,18 +1,16 @@
-from qiskit import QuantumCircuit, Aer, execute
+from qiskit import QuantumCircuit
+from qiskit_aer import AerSimulator
 
 def run_quantum():
-    qc = QuantumCircuit(2)
+    qc = QuantumCircuit(2, 2)
 
-    # Superposición
     qc.h(0)
-
-    # Entrelazamiento
     qc.cx(0, 1)
 
-    qc.measure_all()
+    qc.measure([0, 1], [0, 1])
 
-    simulator = Aer.get_backend('qasm_simulator')
-    result = execute(qc, simulator).result()
+    simulator = AerSimulator()
+    result = simulator.run(qc, shots=1024).result()
 
     counts = result.get_counts()
 
